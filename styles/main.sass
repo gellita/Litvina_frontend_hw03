@@ -1,0 +1,144 @@
+@import "mixins.sass"
+
+*
+  box-sizing: border-box
+
+
+@font-face
+  font-family: MyFont
+  src: url("assets/fonts/Inter-Medium.ttf")
+  font-weight: 600
+
+
+
+
+html
+  font-family: MyFont, serif
+
+
+li
+  list-style-type: none
+
+
+nav
+  display: flex
+  justify-content: space-between
+  padding: 16px 52px
+  align-items: center
+  img
+    width: 119px
+    height: 36px
+    object-fit: contain
+    @include device(mobile)
+      width: 80px
+      height: 30px
+
+
+
+nav > ul
+  display: flex
+  justify-content: space-between
+  font-size: 14px
+
+.header__list
+  width: 311px
+  @include device(mobile)
+    display: none
+
+
+.icon__list
+  img
+    width: 28px
+    height: 28px
+
+
+.number
+  background-color: black
+  color: white
+  width: 20px
+  height: 20px
+  border-radius: 10px
+  display: flex
+  justify-content: center
+  margin-top: 4px
+
+
+
+main > article > section
+  display: flex
+  @include device(mobile)
+    flex-wrap: wrap
+
+
+
+.section
+  &__1
+    img
+      width: 50%
+      object-fit: contain
+      @include device(mobile)
+        width: 100%
+  &__2
+    margin: 52px
+    display: flex
+    justify-content: center
+    border-top: 1px solid lightgrey
+    border-bottom: 1px solid lightgrey
+
+    img
+      height: 30px
+      margin: 28px 22px
+      width: 120px
+      object-fit: contain
+
+
+.text
+  display: flex
+  flex-direction: column
+  justify-content: center
+  word-wrap: break-word
+  margin: 0 82px
+  @include device(mobile)
+    margin: 0
+
+.text__1
+  font-size: 16px
+  line-height: 26px
+  word-wrap: break-word
+
+.text__2
+  font-size: 54px
+  line-height: 62px
+  word-wrap: break-word
+
+.text__3
+  font-size: 18px
+  font-weight: 400
+  line-height: 30px
+
+
+
+.text__4
+  font-size: 18px
+  line-height: 32px
+  text-decoration: underline
+  word-wrap: break-word
+
+.brands
+  margin: 56px 0
+
+
+.banner__grid
+  display: flex
+  justify-content: space-between
+  padding: 52px
+
+.banner__img
+  height: 524px
+  width: 424px
+
+.content_img
+  width: 50%
+  object-fit: contain
+
+
