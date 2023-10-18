@@ -66,6 +66,7 @@ nav > ul
 
 main > article > section
   display: flex
+  background-color: rgba(255, 255, 255, 1)
   @include device(mobile)
     flex-wrap: wrap
 
@@ -101,28 +102,27 @@ main > article > section
   @include device(mobile)
     margin: 0
 
-.text__1
-  font-size: 16px
-  line-height: 26px
-  word-wrap: break-word
+  &__1
+    font-size: 16px
+    line-height: 26px
+    word-wrap: break-word
 
-.text__2
-  font-size: 54px
-  line-height: 62px
-  word-wrap: break-word
+  &__2
+    font-size: 54px
+    line-height: 62px
+    word-wrap: break-word
 
-.text__3
-  font-size: 18px
-  font-weight: 400
-  line-height: 30px
+  &__3
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
 
+  &__4
+    font-size: 18px
+    line-height: 32px
+    text-decoration: underline
+    word-wrap: break-word
 
-
-.text__4
-  font-size: 18px
-  line-height: 32px
-  text-decoration: underline
-  word-wrap: break-word
 
 .brands
   margin: 56px 0
@@ -130,15 +130,44 @@ main > article > section
 
 .banner__grid
   display: flex
-  justify-content: space-between
+  justify-content: center
   padding: 52px
 
-.banner__img
-  height: 524px
-  width: 424px
+  img
+    width: 100%
+    padding: 16px
 
-.content_img
-  width: 50%
-  object-fit: contain
+      width: 100%
+  &__text1
+    display: flex
+    font-size: 16px
+    font-weight: 400
+    line-height: 26px
+    color: #5F6980
+    justify-content: center
+  &__text2
+    display: flex
+    font-size: 20px
+    font-weight: 600
+    line-height: 28px
+    justify-content: center
+
+
+.content
+  img
+    width: 50%
+    object-fit: contain
+    @include device(mobile)
+      width: 100%
+
+.shop
+  background-color: black
+  color: white
+  height: 52px
+  width: 134px
+  font-size: 18px
+  line-height: 32px
+  letter-spacing: -0.4px
+  border: none
 
 
