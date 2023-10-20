@@ -21,6 +21,11 @@ nav {
   padding: 16px 52px;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  nav {
+    padding: 16px;
+  }
+}
 nav img {
   width: 119px;
   height: 36px;
