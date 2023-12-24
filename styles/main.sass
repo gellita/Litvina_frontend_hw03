@@ -20,6 +20,15 @@ li
   list-style-type: none
 
 
+ul
+  padding: 0
+  margin: 0
+
+p
+  margin: 24px 0
+  padding: 0
+
+
 nav
   display: flex
   justify-content: space-between
@@ -27,13 +36,14 @@ nav
   align-items: center
   @include device(mobile)
     padding: 16px
-  img
-    width: 119px
-    height: 36px
-    object-fit: contain
-    @include device(mobile)
-      width: 80px
-      height: 30px
+
+.header__logo
+  width: 119px
+  height: 36px
+  object-fit: contain
+  @include device(mobile)
+    width: 80px
+    height: 30px
 
 
 
@@ -76,6 +86,7 @@ main > article > section
 
 .section
   &__1
+    background-color: #F9FAFB
     img
       width: 50%
       object-fit: contain
@@ -125,6 +136,13 @@ main > article > section
     text-decoration: underline
     word-wrap: break-word
 
+  &__5
+    font-size: 34px
+    font-style: normal
+    font-weight: 600
+    line-height: 40px
+    letter-spacing: -0.4px
+
 
 .brands
   margin: 56px 0
@@ -134,6 +152,7 @@ main > article > section
   display: flex
   justify-content: center
   padding: 52px
+
 
   img
     width: 100%
@@ -147,6 +166,7 @@ main > article > section
     line-height: 26px
     color: #5F6980
     justify-content: center
+
   &__text2
     display: flex
     font-size: 20px
@@ -156,6 +176,7 @@ main > article > section
 
 
 .content
+  background-color: #F9FAFB
   img
     width: 50%
     object-fit: contain
@@ -171,5 +192,138 @@ main > article > section
   line-height: 32px
   letter-spacing: -0.4px
   border: none
+
+label
+  display: flex
+  align-items: center
+  @include device(mobile)
+    border-bottom: 1px solid lightgrey
+.CTA
+  display: flex
+  flex-direction: column
+  border-radius: 12px
+  border: 1px solid #9D9FA1
+  margin: 52px
+  padding: 79px 398px
+  justify-content: center
+  align-items: center
+  text-align: center
+  @include device(mobile)
+    padding: 100px 16px
+    margin: 20px
+
+  &__signup
+    display: flex
+    align-items: center
+    border-bottom: 1px solid lightgrey
+    width: 488px
+    height: 52px
+    @include device(mobile)
+      flex-direction: column
+      border-bottom: none
+
+
+    input
+      width: 395px
+      height: 26px
+      border: none
+      margin-left: 5px
+      @include device(mobile)
+        width: 300px
+        height: 46px
+
+    &__button
+      border: none
+      background-color: white
+      font-weight: 600
+      cursor: pointer
+      @include device(mobile)
+        background-color: black
+        color: white
+        width: 311px
+        padding: 10px
+        margin: 10px
+
+.banner__image
+  margin: 52px
+  display: flex
+  justify-content: center
+  img
+    position: relative
+    height: 100%
+    width: 100%
+    object-fit: cover
+    @include device(mobile)
+      height: 375px
+
+  &__text
+    color: white
+    position: absolute
+    width: 478px
+    margin:  150px auto
+    text-align: center
+    align-items: center
+    @include device(mobile)
+      width: 350px
+
+.footer
+  background-color: #F9FAFB
+  padding: 52px 52px 0
+
+  &__etc
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include device(mobile)
+      flex-direction: column
+    &__desc
+      color: #9D9FA1
+    &__lang
+      display: flex
+      justify-content: space-evenly
+      width: 178px
+
+  &__main
+    display: flex
+    justify-content: space-between
+    padding: 72px 0
+    border-bottom: 1px solid lightgrey
+    @include device(mobile)
+      flex-direction: column
+    &__info
+      width: 380px
+      p
+        color: #5F6980
+
+    &__columns
+      display: flex
+      width: 642px
+      height: 162px
+      justify-content: space-between
+      padding: 0 77px
+      @include device(mobile)
+        flex-direction: column
+        padding: 0
+
+
+
+
+.footer__main__columns__list
+  &__item
+    color: #9D9FA1
+    @include device(mobile)
+      display: none
+    li
+      padding: 10px 0
+
+.media
+  width: 36px
+  height: 36px
+  background-color: white
+  padding: 10px
+  border-radius: 25px
+  cursor: pointer
+  @include device(mobile)
+    display: none
 
 

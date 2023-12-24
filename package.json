@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.67.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.2"
   }
 }

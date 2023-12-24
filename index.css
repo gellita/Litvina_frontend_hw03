@@ -15,6 +15,16 @@ li {
   list-style-type: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 24px 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -26,13 +36,14 @@ nav {
     padding: 16px;
   }
 }
-nav img {
+
+.header__logo {
   width: 119px;
   height: 36px;
   object-fit: contain;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  nav img {
+  .header__logo {
     width: 80px;
     height: 30px;
   }
@@ -79,6 +90,9 @@ main > article > section {
   }
 }
 
+.section__1 {
+  background-color: #F9FAFB;
+}
 .section__1 img {
   width: 50%;
   object-fit: contain;
@@ -135,6 +149,13 @@ main > article > section {
   text-decoration: underline;
   word-wrap: break-word;
 }
+.text__5 {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+}
 
 .brands {
   margin: 56px 0;
@@ -166,6 +187,9 @@ main > article > section {
   justify-content: center;
 }
 
+.content {
+  background-color: #F9FAFB;
+}
 .content img {
   width: 50%;
   object-fit: contain;
@@ -185,6 +209,183 @@ main > article > section {
   line-height: 32px;
   letter-spacing: -0.4px;
   border: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  label {
+    border-bottom: 1px solid lightgrey;
+  }
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #9D9FA1;
+  margin: 52px;
+  padding: 79px 398px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .CTA {
+    padding: 100px 16px;
+    margin: 20px;
+  }
+}
+.CTA__signup {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  width: 488px;
+  height: 52px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .CTA__signup {
+    flex-direction: column;
+    border-bottom: none;
+  }
+}
+.CTA__signup input {
+  width: 395px;
+  height: 26px;
+  border: none;
+  margin-left: 5px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .CTA__signup input {
+    width: 300px;
+    height: 46px;
+  }
+}
+.CTA__signup__button {
+  border: none;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .CTA__signup__button {
+    background-color: black;
+    color: white;
+    width: 311px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.banner__image {
+  margin: 52px;
+  display: flex;
+  justify-content: center;
+}
+.banner__image img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner__image img {
+    height: 375px;
+  }
+}
+.banner__image__text {
+  color: white;
+  position: absolute;
+  width: 478px;
+  margin: 150px auto;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner__image__text {
+    width: 350px;
+  }
+}
+
+.footer {
+  background-color: #F9FAFB;
+  padding: 52px 52px 0;
+}
+.footer__etc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__etc {
+    flex-direction: column;
+  }
+}
+.footer__etc__desc {
+  color: #9D9FA1;
+}
+.footer__etc__lang {
+  display: flex;
+  justify-content: space-evenly;
+  width: 178px;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  padding: 72px 0;
+  border-bottom: 1px solid lightgrey;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
+.footer__main__info {
+  width: 380px;
+}
+.footer__main__info p {
+  color: #5F6980;
+}
+.footer__main__columns {
+  display: flex;
+  width: 642px;
+  height: 162px;
+  justify-content: space-between;
+  padding: 0 77px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__main__columns {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.footer__main__columns__list__item {
+  color: #9D9FA1;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__main__columns__list__item {
+    display: none;
+  }
+}
+.footer__main__columns__list__item li {
+  padding: 10px 0;
+}
+
+.media {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .media {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
